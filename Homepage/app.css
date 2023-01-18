@@ -1,0 +1,275 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: black;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px;
+    width: 100%;
+    background-color: rgba(45, 51, 63, 0.4);
+}
+
+.logo a {
+    font-size: 29px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(155, 193, 255);
+    margin-left: 140px;
+    letter-spacing: 1px;
+    border: 2px solid rgba(155, 193, 255, 0.9);
+    padding: 5px 10px 5px;
+}
+
+.right-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+.nav-bar-links:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.07em);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar-links {
+    font-size: 20px;
+    color: rgb(111, 166, 254);
+    font-weight: lighter;
+    transition: ease-in-out 0.3s;
+}
+
+.writing-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24%;
+    margin-top: 125px;
+}
+
+.writing-title h1 {
+    color: rgb(155, 193, 255);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.writing-base-link {
+    transition: 0.2s ease-in-out;
+}
+
+.writing-base-link:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.07em);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.left-article {
+    display: flex;
+    width: 200px;
+    height: 500px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 60px;
+    color: whitesmoke;
+    position: relative; 
+}
+
+.blog-title {
+    display: flex;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(255, 169, 216);
+    transition: 0.2s ease-in-out;
+}
+
+.blog-title h1 {
+    padding: 0 10px 5px 10px;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    font-family: Bebas Neue, sans-serif;
+}
+
+.blog-title:hover {
+    transform: translateY(-0.1em);
+    background-color: rgb(255, 141, 204);
+}
+
+.blog-paragraph {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    width: 97%;
+    justify-content: flex-start;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: 4px solid white;
+    border-style: none none solid none;
+    border-radius: 5px;
+}
+
+.blog-paragraph p {
+    margin-left: 8px;
+}
+
+.blog-paragraph img {
+    position: absolute;
+    display: inline;
+    padding-left: 8px;
+    width: 1.3em;
+    height: auto;
+    filter: sepia(0.4)
+}
+
+.blog-paragraph h1 {
+    color:rgb(239, 239, 240);
+    text-align: center;
+}
+
+/* .right-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:fit-content;
+    height: 400px;
+    margin-right: 4%;
+    margin-top: 50px;
+    color: rgb(240, 240, 240);
+}
+
+#photography {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    height: auto;
+    border-radius: none;
+    padding: 0;
+} */
+
+.writing-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    width: 70%;
+    margin-right: 6%;
+}
+
+.piece {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(155, 193, 255);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+/* Each 'piece' should direct to a separate page with just selected pieces, complete with a side bar directing to each one */
+/* Need to overlay a link on each piece so that any part of the square can be clicked on and directed to the link */
+
+.piece-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    background: rgba(21, 38, 48, 0.6);
+    transition: 0.5s ease-in-out;
+}
+
+.piece-title a, h1 {
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(239, 239, 240);
+    font-weight: 300;
+    line-height: 22px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.piece a, img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.piece:hover {
+    transform: translateY(-0.2em);
+}
+
+.piece:hover .piece-title {
+    opacity: 0;
+}
+
+.description, .description-paragraph {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.description-paragraph {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:rgb(239, 239, 240);
+    background-color: rgba(21, 38, 48, 0.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.piece:hover .description-paragraph {
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(45, 51, 63, 0.4);
+    padding: 5px;
+}
+
+footer div {
+    color: rgb(145, 144, 144);
+    font-size: 15px;
+}

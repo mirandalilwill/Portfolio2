@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: Montserrat, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 20px 20px;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 29px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(155, 193, 255);
+    margin-left: 140px;
+    letter-spacing: 1px;
+    border: 2px solid rgba(155, 193, 255, 0.9);
+    padding: 5px 10px 5px;
+}
+
+.right-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.07em);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(111, 166, 254);
+    font-weight: lighter;
+    transition: ease-in-out 0.3s;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24%;
+    margin-top: 125px;
+    margin-bottom: 20px;
+}
+
+.about-title h1 {
+    color: rgb(155, 193, 255);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 23%;
+    width: 800px;
+    height: auto
+}
+
+.about-box p {
+    color:rgb(255, 255, 255);
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.about-box img {
+    border-radius: 10px;
+}

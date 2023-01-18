@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: Montserrat, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px;
+    width: 100%;
+    background-color: rgba(45, 51, 63, 0.4);
+}
+
+.logo a {
+    font-size: 29px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(155, 193, 255);
+    margin-left: 140px;
+    letter-spacing: 1px;
+    border: 2px solid rgba(155, 193, 255, 0.9);
+    padding: 5px 10px 5px;
+}
+
+.right-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+.nav-bar-links:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.07em);
+}
+
+.nav-bar-links {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(111, 166, 254);
+    font-weight: lighter;
+    transition: ease-in-out 0.3s;
+}
+
+.writing-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 22.5%;
+    margin-top: 125px;
+}
+
+.writing-title h1 {
+    color: rgb(155, 193, 255);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 22.5%;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.mapshot {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+.mapshot-img {
+    width: 450px;
+    height: auto;
+    border-radius: 10%;
+    transition: .5s ease-in-out;
+}
+
+.mapshot-img:hover {
+    transform: translateY(-0.2em);
+    opacity: 0.9;
+}
